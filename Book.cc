@@ -5,8 +5,7 @@ using namespace std;
 #include "Book.h"
 
 
-Book::Book(int i, string c, string t, string a, int y)
-{
+Book::Book(int i, string c, string t, string a, int y){
   id     = i;
   title  = t;
   author = a;

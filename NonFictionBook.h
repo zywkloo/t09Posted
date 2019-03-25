@@ -8,7 +8,7 @@
 
 class NonFictionBook : public Book {
     public:
-        NonFictionBook(int=0, string="EmptyCall", string="EmptyTitle",  string= "EmptyAuthor",int=0);
+        NonFictionBook(int, string, string,string,int);
         bool lessThan(Book* anotherBook);
 
 

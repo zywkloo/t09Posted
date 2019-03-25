@@ -83,7 +83,7 @@ void List::copy(Array& arr){
   Node* currNode = head;
   //int index = 0;
   while (currNode != NULL ) { //&& index < arr.getSize()
-    arr.Array::add(currNode->book);
+    arr.add(currNode->book);
     currNode = currNode->next;
     //index++;
   }

@@ -14,6 +14,16 @@ Book::Book(int i, string t, string a, int y, string c)
   call = c;
 }
 
+Book::Book(int i, string c, string t, string a, int y)
+{
+  id     = i;
+  title  = t;
+  author = a;
+  year   = y;
+  type = -1;
+  call = c;
+}
+
 Book::~Book() { }
 
 void Book::print()

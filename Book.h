@@ -7,7 +7,6 @@ using namespace std;
 class Book
 {
   public:
-    Book(int=0, string="PriT", string="PriA", int=0, string="PriC");
     Book(int=0, string="PriC", string="PriT", string="PriA", int=0 );
     virtual ~Book();
     virtual void print();

@@ -31,10 +31,10 @@ void Control::launch()
     int bookType = view.readBookType();
     view.readBook(title, author, id, year, call);
     if(bookType==0){  //scs lib
-      Book* bk = new NonFictionBook(id, title, author, year,call);
+      Book* bk = new NonFictionBook(id, call, title, author, year);
       SCSLib.addBook(bk);
     } else{
-      Book* bk = new FictionBook(id, title, author, year,call);
+      Book* bk = new FictionBook(id,call, title, author, year);
       loungeLib.addBook(bk);
     }
   }

@@ -4,15 +4,6 @@ using namespace std;
 
 #include "Book.h"
 
-Book::Book(int i, string t, string a, int y, string c)
-{
-  id     = i;
-  title  = t;
-  author = a;
-  year   = y;
-  type = -1;
-  call = c;
-}
 
 Book::Book(int i, string c, string t, string a, int y)
 {

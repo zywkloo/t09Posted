@@ -9,7 +9,6 @@
 class FictionBook : public Book {
 
     public:
-        FictionBook(int=0, string="EmptyTitle", string="EmptyAuthor", int=0, string= "EmptyCall");
         FictionBook(int=0, string="EmptyCall", string="EmptyTitle", string= "EmptyAuthor",int=0);
         bool lessThan(Book* anotherBook);
 

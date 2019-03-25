@@ -8,10 +8,7 @@ NonFictionBook::NonFictionBook(int id, string callNumber, string title, string a
     type = 0;
 }
 
-NonFictionBook::NonFictionBook(int id, string title , string author, int year, string call)
-:Book(id, title, author, year,call ){
-    type = 0;
-};
+
 
 bool NonFictionBook::lessThan(Book* anotherBook)  //ascending order of call
         {

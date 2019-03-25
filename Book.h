@@ -7,7 +7,7 @@ using namespace std;
 class Book
 {
   public:
-    Book(int=0, string="PriC", string="PriT", string="PriA", int=0 );
+    Book(int=0, string="Call", string="title", string="author", int=1000 );
     virtual ~Book();
     virtual void print();
     virtual bool lessThan(Book*) = 0;

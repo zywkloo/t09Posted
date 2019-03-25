@@ -4,7 +4,7 @@
 
 #include "FictionBook.h"
 
-FictionBook::FictionBook(int id, string callNumber, string title, string author, int year){
+FictionBook::FictionBook(int id, string callNumber, string title, string author, int year):Book(id,callNumber,title,author,year){
     type = 1 ;
 }
 

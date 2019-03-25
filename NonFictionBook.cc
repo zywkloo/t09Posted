@@ -4,7 +4,7 @@
 
 #include "NonFictionBook.h"
 
-NonFictionBook::NonFictionBook(int id, string callNumber, string title, string author, int year){
+NonFictionBook::NonFictionBook(int id, string callNumber, string title, string author, int year):Book(id,callNumber,title,author,year){
     type = 0;
 }
 

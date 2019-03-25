@@ -11,7 +11,7 @@ Control::Control()
   Array nonficBooks ;
   bookServer.retrieve(ficBooks,nonficBooks) ;
   for (int i=0; i <ficBooks.getSize();i++)    loungeLib.addBook(ficBooks.get(i));
-  for (int j=0; j <nonficBooks.getSize();j++) SCSLib.addBook(nonficBooks.get(i));
+  for (int j=0; j <nonficBooks.getSize();j++) SCSLib.addBook(nonficBooks.get(j));
 }
 
 Control::~Control()

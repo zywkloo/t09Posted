@@ -11,7 +11,8 @@ class Library
     Library();
     void addBook(Book*);
     void print();
-    
+    void copyBooks(Array&);
+
   private:
     List list;
     

@@ -4,8 +4,24 @@ using namespace std;
 
 #include "Control.h"
 
+
 Control::Control() 
-{}
+{
+  Array ficBooks ;
+  Array nonficBooks ;
+  bookServer.retrieve(ficBooks,nonficBooks) ;
+  for (int i=0; i <ficBooks.getSize();i++)    loungeLib.addBook(ficBooks.get(i));
+  for (int j=0; j <nonficBooks.getSize();j++) SCSLib.addBook(nonficBooks.get(i));
+}
+
+Control::~Control()
+{
+  Array ficBooks ;
+  Array nonficBooks ;
+  loungeLib.copyBooks(ficBooks);
+  SCSLib.copyBooks(nonficBooks);
+  bookServer.update(ficBooks,nonficBooks) ;
+}
 
 void Control::launch()
 {

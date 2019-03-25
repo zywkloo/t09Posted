@@ -15,3 +15,7 @@ void Library::addBook(Book* newBook) {
 void Library::print() {
   list.print();
 }
+
+void Library::copyBooks(Array& arr){
+  list.copy(arr);
+}

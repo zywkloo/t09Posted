@@ -8,7 +8,7 @@ t09:	$(OBJS) BookServer.o Array.o
 main.o:	main.cc Book.h
 	g++ $(OPT) -c main.cc
 
-Control.o:	Control.cc Control.h
+Control.o:	Control.cc Control.h BookServer.h Array.h
 	g++ $(OPT) -c Control.cc
 
 View.o:	View.cc View.h
